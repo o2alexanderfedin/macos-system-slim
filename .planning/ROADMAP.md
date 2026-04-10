@@ -59,7 +59,11 @@ Plans:
   3. All pre-migration images appear in `docker images` output
   4. All pre-migration containers appear in `docker ps -a` output
   5. `docker run --rm hello-world` completes successfully
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Create cutover and verification scripts
+- [ ] 03-02-PLAN.md — Execute cutover and user confirmation
 
 ### Phase 4: Cleanup and Hardening
 **Goal**: Internal disk space is reclaimed and configuration prevents auto-update or login races from destroying the migration
@@ -81,5 +85,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Pre-flight | 2/2 | Complete   | 2026-04-10 |
 | 2. Data Copy | 2/2 | Complete   | 2026-04-10 |
-| 3. Cutover and Verification | 0/? | Not started | - |
+| 3. Cutover and Verification | 0/2 | In progress | - |
 | 4. Cleanup and Hardening | 0/? | Not started | - |
