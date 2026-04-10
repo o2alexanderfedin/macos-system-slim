@@ -35,10 +35,10 @@ Requirements for migration completion. Each maps to roadmap phases.
 
 ### Cleanup and Hardening
 
-- [ ] **CLEAN-01**: Original `Docker.raw` is deleted from internal disk (only after verification passes)
-- [ ] **CLEAN-02**: Internal disk space is confirmed reclaimed
-- [ ] **CLEAN-03**: Docker Desktop auto-update is disabled to prevent config wipe
-- [ ] **CLEAN-04**: Docker Desktop "Start at login" is disabled to prevent boot-time race with USB mount
+- [x] **CLEAN-01**: Original `Docker.raw` is deleted from internal disk (only after verification passes)
+- [x] **CLEAN-02**: Internal disk space is confirmed reclaimed
+- [x] **CLEAN-03**: Docker Desktop auto-update is disabled to prevent config wipe
+- [x] **CLEAN-04**: Docker Desktop "Start at login" is disabled to prevent boot-time race with USB mount
 
 ## v2 Requirements
 
@@ -80,10 +80,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | VERIF-01 | Phase 3: Cutover and Verification | Complete |
 | VERIF-02 | Phase 3: Cutover and Verification | Complete |
 | VERIF-03 | Phase 3: Cutover and Verification | Complete |
-| CLEAN-01 | Phase 4: Cleanup and Hardening | Pending |
-| CLEAN-02 | Phase 4: Cleanup and Hardening | Pending |
-| CLEAN-03 | Phase 4: Cleanup and Hardening | Pending |
-| CLEAN-04 | Phase 4: Cleanup and Hardening | Pending |
+| CLEAN-01 | Phase 4: Cleanup and Hardening | Complete |
+| CLEAN-02 | Phase 4: Cleanup and Hardening | Complete |
+| CLEAN-03 | Phase 4: Cleanup and Hardening | Complete |
+| CLEAN-04 | Phase 4: Cleanup and Hardening | Complete |
 
 **Coverage:**
 - v1 requirements: 18 total

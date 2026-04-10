@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: "Completed 03-02-PLAN.md: Docker Desktop live-cutover to external volume confirmed"
-last_updated: "2026-04-10T05:32:50.667Z"
+status: executing
+stopped_at: "Completed 04-01-PLAN.md: cleanup.sh and harden.sh created for Phase 4"
+last_updated: "2026-04-10T06:17:03.468Z"
 last_activity: 2026-04-10
 progress:
   total_phases: 4
   completed_phases: 3
-  total_plans: 6
-  completed_plans: 6
+  total_plans: 8
+  completed_plans: 7
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-09)
 
 **Core value:** Docker data lives on the external volume so the internal disk is no longer constrained by Docker storage.
-**Current focus:** Phase 03 — cutover-and-verification
+**Current focus:** Phase 04 — cleanup-and-hardening
 
 ## Current Position
 
-Phase: 4
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 04 (cleanup-and-hardening) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-04-10
 
 Progress: [░░░░░░░░░░] 0%
@@ -58,6 +58,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 02-data-copy P02 | 15 | 2 tasks | 1 files |
 | Phase 03-cutover-and-verification P01 | 2 | 2 tasks | 2 files |
 | Phase 03-cutover-and-verification P02 | 15 | 2 tasks | 1 files |
+| Phase 04-cleanup-and-hardening P01 | 3 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -83,6 +84,9 @@ Recent decisions affecting current work:
 - [Phase 03-01]: DockerRootDir informational only -- may show VM-internal path /var/lib/docker not macOS host path (Open Question 2)
 - [Phase 03-cutover-and-verification]: market-oracle api container restart loop confirmed pre-existing (D-09), not migration-related -- user explicitly approved at checkpoint
 - [Phase 03-cutover-and-verification]: All 5 cutover requirements satisfied (CONF-01, CONF-02, VERIF-01, VERIF-02, VERIF-03); Phase 4 cleanup cleared to proceed
+- [Phase 04-cleanup-and-hardening]: cleanup.sh gates on verify-cutover.sh (D-01): deletion blocked if Phase 3 verification fails
+- [Phase 04-cleanup-and-hardening]: harden.sh key names from live inspection: AutoDownloadUpdates/DisableUpdate/AutoStart (not autoInstallUpdates/openAtStartup which do not exist)
+- [Phase 04-cleanup-and-hardening]: D-08 post-restart readback verify confirms hardening keys survived Docker Desktop startup flush
 
 ### Pending Todos
 
@@ -96,6 +100,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-10T05:29:12.559Z
-Stopped at: Completed 03-02-PLAN.md: Docker Desktop live-cutover to external volume confirmed
+Last session: 2026-04-10T06:17:03.464Z
+Stopped at: Completed 04-01-PLAN.md: cleanup.sh and harden.sh created for Phase 4
 Resume file: None
