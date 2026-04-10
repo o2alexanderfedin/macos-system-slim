@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 2 context gathered
-last_updated: "2026-04-10T03:00:13.616Z"
+status: executing
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-04-10T03:52:40.632Z"
 last_activity: 2026-04-10
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 4
+  completed_plans: 3
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-09)
 
 **Core value:** Docker data lives on the external volume so the internal disk is no longer constrained by Docker storage.
-**Current focus:** Phase 01 — pre-flight
+**Current focus:** Phase 02 — data-copy
 
 ## Current Position
 
-Phase: 2
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 02 (data-copy) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-04-10
 
 Progress: [░░░░░░░░░░] 0%
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01 P01 | 2 | 2 tasks | 2 files |
 | Phase 01-pre-flight P01-02 | 15 | 2 tasks | 3 files |
+| Phase 02 P01 | 1 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,9 @@ Recent decisions affecting current work:
 - [Phase 01]: verify-preflight.sh quick mode prints informational UseVirtualizationFramework status without abort logic
 - [Phase 01-pre-flight]: diskSizeMiB discrepancy resolved: actual on-disk Docker.raw is 24.1 GB (sparse APFS); use this for Phase 2 space calculations
 - [Phase 01-pre-flight]: Apple Virtualization Framework backend confirmed — no /host_mnt path prefix issue in Phase 2
+- [Phase 02-01]: cp -c as primary (clonefile/copyfile APFS semantics), ditto as fallback — both preserve APFS sparse metadata
+- [Phase 02-01]: Background polling with du -sk (not ls -la) — du measures committed on-disk blocks, ls reports logical size always
+- [Phase 02-01]: sleep 2 before verification to allow APFS metadata flush — prevents false on-disk size mismatch
 
 ### Pending Todos
 
@@ -81,6 +85,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-10T03:00:13.612Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-data-copy/02-CONTEXT.md
+Last session: 2026-04-10T03:52:40.628Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: None

@@ -17,10 +17,10 @@ Requirements for migration completion. Each maps to roadmap phases.
 
 ### Data Migration
 
-- [ ] **MIGR-01**: `Docker.raw` is copied from internal disk to `/Volumes/Unitek-B/Docker/` preserving APFS sparse structure
-- [ ] **MIGR-02**: Copy size is verified to match original (file size comparison)
-- [ ] **MIGR-03**: Copy progress is visible during transfer
-- [ ] **MIGR-04**: Fallback copy method (ditto) is available if `cp -c` fails
+- [x] **MIGR-01**: `Docker.raw` is copied from internal disk to `/Volumes/Unitek-B/Docker/` preserving APFS sparse structure
+- [x] **MIGR-02**: Copy size is verified to match original (file size comparison)
+- [x] **MIGR-03**: Copy progress is visible during transfer
+- [x] **MIGR-04**: Fallback copy method (ditto) is available if `cp -c` fails
 
 ### Configuration Update
 
@@ -71,10 +71,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PREFLT-03 | Phase 1: Pre-flight | Complete |
 | PREFLT-04 | Phase 1: Pre-flight | Complete |
 | PREFLT-05 | Phase 1: Pre-flight | Complete |
-| MIGR-01 | Phase 2: Data Copy | Pending |
-| MIGR-02 | Phase 2: Data Copy | Pending |
-| MIGR-03 | Phase 2: Data Copy | Pending |
-| MIGR-04 | Phase 2: Data Copy | Pending |
+| MIGR-01 | Phase 2: Data Copy | Complete |
+| MIGR-02 | Phase 2: Data Copy | Complete |
+| MIGR-03 | Phase 2: Data Copy | Complete |
+| MIGR-04 | Phase 2: Data Copy | Complete |
 | CONF-01 | Phase 3: Cutover and Verification | Pending |
 | CONF-02 | Phase 3: Cutover and Verification | Pending |
 | VERIF-01 | Phase 3: Cutover and Verification | Pending |
