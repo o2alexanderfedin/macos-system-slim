@@ -1,0 +1,34 @@
+=== Cutover Results ===
+Timestamp: 2026-04-10T05:25:20Z
+Settings update (CONF-01): PASS
+  settings-store.json DataFolder: /Volumes/Unitek-B/Docker
+  settings.json dataFolder:       /Volumes/Unitek-B/Docker
+Docker readiness (CONF-02): PASS (ready after 5s)
+Docker Root Dir (informational): /var/lib/docker
+=== End Results ===
+
+=== Verification ===
+Cutover Verification Results
+============================
+[ PASS ] Docker daemon is running
+[ PASS ] CONF-01: DataFolder = /Volumes/Unitek-B/Docker
+[ INFO ] Docker Root Dir: /var/lib/docker
+[ INFO ] Note: VM-internal path is expected (see research Open Question 2)
+[ PASS ] VERIF-01: 5 image(s) present
+[ INFO ] First 10 images:
+memory-map/age-pgvector:test
+market-oracle-api:latest
+pgvector/pgvector:pg16
+testcontainers/ryuk:0.8.1
+mcr.microsoft.com/infersharp:v1.5
+[ PASS ] VERIF-02: 3 container(s) present
+[ INFO ] First 10 containers (all states):
+amazing_bell (Exited (255) 11 hours ago)
+market-oracle-api (Restarting (1) Less than a second ago)
+market-oracle-postgres (Exited (128) 27 hours ago)
+[ INFO ] hello-world not cached -- will pull from registry (requires network)
+[ PASS ] VERIF-03: hello-world smoke test succeeded
+
+Results: 5 passed, 0 failed
+======================================
+All checks passed -- Docker is running from external volume. Safe to proceed to Phase 4 (cleanup).
