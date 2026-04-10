@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.docker-on-volume</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/alexanderfedin/bin/docker-after-volume.sh</string>
+    </array>
+    <key>StartOnMount</key>
+    <true/>
+    <key>StartInterval</key>
+    <integer>60</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/tmp/docker-volume-watcher.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/docker-volume-watcher.err</string>
+</dict>
+</plist>

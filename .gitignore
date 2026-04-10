@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+
+# Execution results (machine-specific)
+.planning/phases/**/preflight-results.txt
+.planning/phases/**/copy-results.txt
+.planning/phases/**/cutover-results.txt
+.planning/phases/**/cleanup-results.txt
+.planning/phases/**/harden-results.txt
+
+# GSD workflow internals
+.planning/debug/
+.planning/todos/
+.planning/config.json
+
+# IDE / tools
+.playwright-mcp/
+.prompts/
+.remember/
+
+# Pre-existing unrelated files
+*.crdownload
+gitflow-test-file
