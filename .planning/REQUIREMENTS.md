@@ -24,14 +24,14 @@ Requirements for migration completion. Each maps to roadmap phases.
 
 ### Configuration Update
 
-- [ ] **CONF-01**: `DataFolder` key in `settings-store.json` is updated to `/Volumes/Unitek-B/Docker`
-- [ ] **CONF-02**: Docker Desktop starts successfully from the new location
+- [x] **CONF-01**: `DataFolder` key in `settings-store.json` is updated to `/Volumes/Unitek-B/Docker`
+- [x] **CONF-02**: Docker Desktop starts successfully from the new location
 
 ### Verification
 
-- [ ] **VERIF-01**: All pre-existing Docker images are present after migration (`docker images`)
-- [ ] **VERIF-02**: All pre-existing containers are present after migration (`docker ps -a`)
-- [ ] **VERIF-03**: Smoke test container runs successfully (`docker run --rm hello-world`)
+- [x] **VERIF-01**: All pre-existing Docker images are present after migration (`docker images`)
+- [x] **VERIF-02**: All pre-existing containers are present after migration (`docker ps -a`)
+- [x] **VERIF-03**: Smoke test container runs successfully (`docker run --rm hello-world`)
 
 ### Cleanup and Hardening
 
@@ -75,11 +75,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MIGR-02 | Phase 2: Data Copy | Complete |
 | MIGR-03 | Phase 2: Data Copy | Complete |
 | MIGR-04 | Phase 2: Data Copy | Complete |
-| CONF-01 | Phase 3: Cutover and Verification | Pending |
-| CONF-02 | Phase 3: Cutover and Verification | Pending |
-| VERIF-01 | Phase 3: Cutover and Verification | Pending |
-| VERIF-02 | Phase 3: Cutover and Verification | Pending |
-| VERIF-03 | Phase 3: Cutover and Verification | Pending |
+| CONF-01 | Phase 3: Cutover and Verification | Complete |
+| CONF-02 | Phase 3: Cutover and Verification | Complete |
+| VERIF-01 | Phase 3: Cutover and Verification | Complete |
+| VERIF-02 | Phase 3: Cutover and Verification | Complete |
+| VERIF-03 | Phase 3: Cutover and Verification | Complete |
 | CLEAN-01 | Phase 4: Cleanup and Hardening | Pending |
 | CLEAN-02 | Phase 4: Cleanup and Hardening | Pending |
 | CLEAN-03 | Phase 4: Cleanup and Hardening | Pending |
