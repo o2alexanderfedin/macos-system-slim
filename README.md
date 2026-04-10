@@ -1,6 +1,6 @@
-# Docker Desktop External Volume Migration (macOS)
+# macOS System Slim
 
-Move Docker Desktop's data store from the internal disk to an external volume on macOS. Reclaim disk space, automate Docker lifecycle with volume mount/unmount events, and keep the system clean with weekly maintenance.
+Keep your Mac's internal disk lean and your dev environment tidy. Moves Docker Desktop's data to an external volume, automates Docker lifecycle with mount/unmount events, caps resource usage (RAM, CPU), and runs weekly cleanup of caches, build artifacts, and stale downloads across Docker, Homebrew, npm, pip, Gradle, NuGet, and Chrome.
 
 ## What This Does
 

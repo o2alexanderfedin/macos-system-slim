@@ -1,10 +1,10 @@
 ## Project
 
-**Docker Desktop External Volume Migration (macOS)**
+**macOS System Slim**
 
-Scripts and automation to move Docker Desktop's data store from the internal disk to an external APFS volume, with volume-aware lifecycle management and weekly maintenance.
+Scripts and launchd automation to keep a Mac's internal disk lean and dev tools tidy. Docker Desktop data lives on an external APFS volume with automatic start/stop on mount/unmount. Weekly launchd agents clean caches across Docker, Homebrew, npm, pip, Gradle, NuGet, and Chrome. Docker resource usage is capped (RAM, CPU, auto-update, start-at-login).
 
-**Core Value:** Docker data lives on the external volume so the internal disk stays slim. Docker starts/stops automatically with the drive.
+**Core Value:** Minimize disk and RAM footprint on the internal drive while keeping the dev environment fully functional.
 
 ### Constraints
 
