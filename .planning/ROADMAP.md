@@ -13,7 +13,7 @@ Four phases take Docker Desktop's data from the internal disk to `/Volumes/Unite
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Pre-flight** - Verify environment is ready and back up settings before touching anything (completed 2026-04-10)
-- [ ] **Phase 2: Data Copy** - Copy Docker.raw to external volume and confirm copy integrity
+- [x] **Phase 2: Data Copy** - Copy Docker.raw to external volume and confirm copy integrity (completed 2026-04-10)
 - [ ] **Phase 3: Cutover and Verification** - Redirect Docker Desktop to new location and verify all data survived
 - [ ] **Phase 4: Cleanup and Hardening** - Remove original data and protect against auto-update and login race
 
@@ -43,11 +43,11 @@ Plans:
   2. Copy file size matches original file size (verified with `stat -f %z`)
   3. Copy progress was visible during transfer (not a silent operation)
   4. Original `Docker.raw` on internal disk is still present and unmodified
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [x] 02-01-PLAN.md — Create copy and verification scripts
-- [ ] 02-02-PLAN.md — Execute copy and user confirmation
+- [x] 02-02-PLAN.md — Execute copy and user confirmation
 
 ### Phase 3: Cutover and Verification
 **Goal**: Docker Desktop runs from the external volume with all pre-migration images and containers intact
@@ -80,6 +80,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Pre-flight | 2/2 | Complete   | 2026-04-10 |
-| 2. Data Copy | 1/2 | In Progress|  |
+| 2. Data Copy | 2/2 | Complete   | 2026-04-10 |
 | 3. Cutover and Verification | 0/? | Not started | - |
 | 4. Cleanup and Hardening | 0/? | Not started | - |
