@@ -28,10 +28,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. External volume `/Volumes/Unitek-B/` is confirmed APFS format with at least 24 GB free
   3. `/Volumes/Unitek-B/Docker/` directory exists and is writable
   4. `settings-store.json` backup exists at a known safe location before any edits
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 01-01-PLAN.md — Create pre-flight and verification scripts
+- [x] 01-01-PLAN.md — Create pre-flight and verification scripts
 - [ ] 01-02-PLAN.md — Execute pre-flight and user confirmation
 
 ### Phase 2: Data Copy
@@ -75,7 +75,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Pre-flight | 0/2 | Planned | - |
+| 1. Pre-flight | 1/2 | In Progress|  |
 | 2. Data Copy | 0/? | Not started | - |
 | 3. Cutover and Verification | 0/? | Not started | - |
 | 4. Cleanup and Hardening | 0/? | Not started | - |

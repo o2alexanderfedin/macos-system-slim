@@ -9,11 +9,11 @@ Requirements for migration completion. Each maps to roadmap phases.
 
 ### Pre-flight Validation
 
-- [ ] **PREFLT-01**: Docker Desktop is verified fully stopped (including menubar agent and background processes)
-- [ ] **PREFLT-02**: External volume `/Volumes/Unitek-B/` is verified as APFS format
-- [ ] **PREFLT-03**: External volume has sufficient free space for Docker.raw (~24 GB on-disk)
-- [ ] **PREFLT-04**: `settings-store.json` is backed up before any modifications
-- [ ] **PREFLT-05**: Target directory `/Volumes/Unitek-B/Docker/` is created and writable
+- [x] **PREFLT-01**: Docker Desktop is verified fully stopped (including menubar agent and background processes)
+- [x] **PREFLT-02**: External volume `/Volumes/Unitek-B/` is verified as APFS format
+- [x] **PREFLT-03**: External volume has sufficient free space for Docker.raw (~24 GB on-disk)
+- [x] **PREFLT-04**: `settings-store.json` is backed up before any modifications
+- [x] **PREFLT-05**: Target directory `/Volumes/Unitek-B/Docker/` is created and writable
 
 ### Data Migration
 
@@ -66,11 +66,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PREFLT-01 | Phase 1: Pre-flight | Pending |
-| PREFLT-02 | Phase 1: Pre-flight | Pending |
-| PREFLT-03 | Phase 1: Pre-flight | Pending |
-| PREFLT-04 | Phase 1: Pre-flight | Pending |
-| PREFLT-05 | Phase 1: Pre-flight | Pending |
+| PREFLT-01 | Phase 1: Pre-flight | Complete |
+| PREFLT-02 | Phase 1: Pre-flight | Complete |
+| PREFLT-03 | Phase 1: Pre-flight | Complete |
+| PREFLT-04 | Phase 1: Pre-flight | Complete |
+| PREFLT-05 | Phase 1: Pre-flight | Complete |
 | MIGR-01 | Phase 2: Data Copy | Pending |
 | MIGR-02 | Phase 2: Data Copy | Pending |
 | MIGR-03 | Phase 2: Data Copy | Pending |
