@@ -66,24 +66,24 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PREFLT-01 | Phase 1 | Pending |
-| PREFLT-02 | Phase 1 | Pending |
-| PREFLT-03 | Phase 1 | Pending |
-| PREFLT-04 | Phase 1 | Pending |
-| PREFLT-05 | Phase 1 | Pending |
-| MIGR-01 | Phase 2 | Pending |
-| MIGR-02 | Phase 2 | Pending |
-| MIGR-03 | Phase 2 | Pending |
-| MIGR-04 | Phase 2 | Pending |
-| CONF-01 | Phase 3 | Pending |
-| CONF-02 | Phase 3 | Pending |
-| VERIF-01 | Phase 3 | Pending |
-| VERIF-02 | Phase 3 | Pending |
-| VERIF-03 | Phase 3 | Pending |
-| CLEAN-01 | Phase 4 | Pending |
-| CLEAN-02 | Phase 4 | Pending |
-| CLEAN-03 | Phase 4 | Pending |
-| CLEAN-04 | Phase 4 | Pending |
+| PREFLT-01 | Phase 1: Pre-flight | Pending |
+| PREFLT-02 | Phase 1: Pre-flight | Pending |
+| PREFLT-03 | Phase 1: Pre-flight | Pending |
+| PREFLT-04 | Phase 1: Pre-flight | Pending |
+| PREFLT-05 | Phase 1: Pre-flight | Pending |
+| MIGR-01 | Phase 2: Data Copy | Pending |
+| MIGR-02 | Phase 2: Data Copy | Pending |
+| MIGR-03 | Phase 2: Data Copy | Pending |
+| MIGR-04 | Phase 2: Data Copy | Pending |
+| CONF-01 | Phase 3: Cutover and Verification | Pending |
+| CONF-02 | Phase 3: Cutover and Verification | Pending |
+| VERIF-01 | Phase 3: Cutover and Verification | Pending |
+| VERIF-02 | Phase 3: Cutover and Verification | Pending |
+| VERIF-03 | Phase 3: Cutover and Verification | Pending |
+| CLEAN-01 | Phase 4: Cleanup and Hardening | Pending |
+| CLEAN-02 | Phase 4: Cleanup and Hardening | Pending |
+| CLEAN-03 | Phase 4: Cleanup and Hardening | Pending |
+| CLEAN-04 | Phase 4: Cleanup and Hardening | Pending |
 
 **Coverage:**
 - v1 requirements: 18 total
@@ -92,4 +92,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-04-09*
-*Last updated: 2026-04-09 after initial definition*
+*Last updated: 2026-04-09 after roadmap creation*
