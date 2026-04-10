@@ -1,0 +1,22 @@
+Docker.raw Copy
+===============
+[ INFO ] Docker processes: none detected (safe to copy)
+[ INFO ] Source file exists: /Users/alexanderfedin/Library/Containers/com.docker.docker/Data/vms/0/data/Docker.raw
+[ INFO ] Source logical size: 34359738368 bytes (32.0 GB)
+[ INFO ] Source on-disk size: 25335504 KB (24.1 GB sparse)
+[ INFO ] Starting copy: cp -c "/Users/alexanderfedin/Library/Containers/com.docker.docker/Data/vms/0/data/Docker.raw" "/Volumes/Unitek-B/Docker/Docker.raw"
+
+  [ COPY ] [##############################                    ]  61%
+[ ABORT ] Previous run was interrupted at 61% -- partial destination exists (15,911,456 KB of 25,335,504 KB expected)
+[ INFO ] Current status: Docker is RUNNING -- cannot copy while Docker processes are active
+[ INFO ] To retry: stop Docker Desktop completely, then re-run copy-docker.sh
+[ INFO ] copy-docker.sh will automatically clean up the partial destination and start fresh
+
+=== Partial Destination Status ===
+[ INFO ] Destination logical size: 34359738368 bytes (matches source -- APFS sparse metadata)
+[ INFO ] Destination on-disk size: 15911456 KB (expected ~25335504 KB -- partial copy)
+[ FAIL ] MIGR-02b: On-disk size mismatch: source=25335504KB dest=15911456KB diff=9424048KB (exceeds 1% tolerance)
+
+=== Action Required ===
+Stop Docker Desktop, then re-run:
+  bash .planning/phases/02-data-copy/copy-docker.sh 2>&1 | tee .planning/phases/02-data-copy/copy-results.txt
