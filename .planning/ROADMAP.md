@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Pre-flight** - Verify environment is ready and back up settings before touching anything (completed 2026-04-10)
 - [x] **Phase 2: Data Copy** - Copy Docker.raw to external volume and confirm copy integrity (completed 2026-04-10)
 - [x] **Phase 3: Cutover and Verification** - Redirect Docker Desktop to new location and verify all data survived (completed 2026-04-10)
-- [ ] **Phase 4: Cleanup and Hardening** - Remove original data and protect against auto-update and login race
+- [x] **Phase 4: Cleanup and Hardening** - Remove original data and protect against auto-update and login race (completed 2026-04-10)
 
 ## Phase Details
 
@@ -74,11 +74,11 @@ Plans:
   2. Internal disk shows reclaimed space (at least ~24 GB freed)
   3. Docker Desktop auto-update is disabled in settings
   4. "Start Docker Desktop when you sign in" is disabled
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [x] 04-01-PLAN.md — Create cleanup and hardening scripts
-- [ ] 04-02-PLAN.md — Execute scripts and user confirmation
+- [x] 04-02-PLAN.md — Execute scripts and user confirmation
 
 ## Progress
 
@@ -90,4 +90,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Pre-flight | 2/2 | Complete   | 2026-04-10 |
 | 2. Data Copy | 2/2 | Complete   | 2026-04-10 |
 | 3. Cutover and Verification | 2/2 | Complete   | 2026-04-10 |
-| 4. Cleanup and Hardening | 1/2 | In Progress|  |
+| 4. Cleanup and Hardening | 2/2 | Complete   | 2026-04-10 |

@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: "Completed 04-01-PLAN.md: cleanup.sh and harden.sh created for Phase 4"
-last_updated: "2026-04-10T06:17:03.468Z"
+status: verifying
+stopped_at: "Completed 04-02-PLAN.md: cleanup and hardening execution complete, migration done"
+last_updated: "2026-04-10T06:20:55.547Z"
 last_activity: 2026-04-10
 progress:
   total_phases: 4
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 8
-  completed_plans: 7
+  completed_plans: 8
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-04-09)
 
 Phase: 04 (cleanup-and-hardening) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-04-10
 
 Progress: [░░░░░░░░░░] 0%
@@ -59,6 +59,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 03-cutover-and-verification P01 | 2 | 2 tasks | 2 files |
 | Phase 03-cutover-and-verification P02 | 15 | 2 tasks | 1 files |
 | Phase 04-cleanup-and-hardening P01 | 3 | 2 tasks | 2 files |
+| Phase 04-cleanup-and-hardening P02 | 10 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -87,6 +88,8 @@ Recent decisions affecting current work:
 - [Phase 04-cleanup-and-hardening]: cleanup.sh gates on verify-cutover.sh (D-01): deletion blocked if Phase 3 verification fails
 - [Phase 04-cleanup-and-hardening]: harden.sh key names from live inspection: AutoDownloadUpdates/DisableUpdate/AutoStart (not autoInstallUpdates/openAtStartup which do not exist)
 - [Phase 04-cleanup-and-hardening]: D-08 post-restart readback verify confirms hardening keys survived Docker Desktop startup flush
+- [Phase 04-cleanup-and-hardening]: User approved final verification checkpoint confirming all 4 CLEAN requirements satisfied
+- [Phase 04-cleanup-and-hardening]: Backup .bak files retained indefinitely (~8 KB) for rollback insurance
 
 ### Pending Todos
 
@@ -100,6 +103,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-10T06:17:03.464Z
-Stopped at: Completed 04-01-PLAN.md: cleanup.sh and harden.sh created for Phase 4
+Last session: 2026-04-10T06:20:55.543Z
+Stopped at: Completed 04-02-PLAN.md: cleanup and hardening execution complete, migration done
 Resume file: None
