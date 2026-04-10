@@ -43,7 +43,11 @@ Plans:
   2. Copy file size matches original file size (verified with `stat -f %z`)
   3. Copy progress was visible during transfer (not a silent operation)
   4. Original `Docker.raw` on internal disk is still present and unmodified
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Create copy and verification scripts
+- [ ] 02-02-PLAN.md — Execute copy and user confirmation
 
 ### Phase 3: Cutover and Verification
 **Goal**: Docker Desktop runs from the external volume with all pre-migration images and containers intact
@@ -76,6 +80,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Pre-flight | 2/2 | Complete   | 2026-04-10 |
-| 2. Data Copy | 0/? | Not started | - |
+| 2. Data Copy | 0/2 | Planned | - |
 | 3. Cutover and Verification | 0/? | Not started | - |
 | 4. Cleanup and Hardening | 0/? | Not started | - |
