@@ -74,7 +74,11 @@ Plans:
   2. Internal disk shows reclaimed space (at least ~24 GB freed)
   3. Docker Desktop auto-update is disabled in settings
   4. "Start Docker Desktop when you sign in" is disabled
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Create cleanup and hardening scripts
+- [ ] 04-02-PLAN.md — Execute scripts and user confirmation
 
 ## Progress
 
@@ -86,4 +90,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Pre-flight | 2/2 | Complete   | 2026-04-10 |
 | 2. Data Copy | 2/2 | Complete   | 2026-04-10 |
 | 3. Cutover and Verification | 2/2 | Complete   | 2026-04-10 |
-| 4. Cleanup and Hardening | 0/? | Not started | - |
+| 4. Cleanup and Hardening | 0/2 | Not started | - |
