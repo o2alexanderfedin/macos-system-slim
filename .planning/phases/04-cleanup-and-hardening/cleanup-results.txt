@@ -1,0 +1,54 @@
+Docker Desktop Cleanup
+======================
+Timestamp: 2026-04-10T06:18:10Z
+
+[ INFO ] Running pre-deletion gate: verify-cutover.sh...
+Cutover Verification Results
+============================
+[ PASS ] Docker daemon is running
+[ PASS ] CONF-01: DataFolder = /Volumes/Unitek-B/Docker
+[ INFO ] Docker Root Dir: /var/lib/docker
+[ INFO ] Note: VM-internal path is expected (see research Open Question 2)
+[ PASS ] VERIF-01: 6 image(s) present
+[ INFO ] First 10 images:
+memory-map/age-pgvector:test
+market-oracle-api:latest
+hello-world:latest
+pgvector/pgvector:pg16
+testcontainers/ryuk:0.8.1
+mcr.microsoft.com/infersharp:v1.5
+[ PASS ] VERIF-02: 3 container(s) present
+[ INFO ] First 10 containers (all states):
+amazing_bell (Exited (255) 12 hours ago)
+market-oracle-api (Restarting (1) 35 seconds ago)
+market-oracle-postgres (Exited (128) 28 hours ago)
+[ INFO ] hello-world image already cached locally
+[ PASS ] VERIF-03: hello-world smoke test succeeded
+
+Results: 5 passed, 0 failed
+======================================
+All checks passed -- Docker is running from external volume. Safe to proceed to Phase 4 (cleanup).
+[ PASS ] Pre-deletion gate: verify-cutover.sh passed
+[ PASS ] Original Docker.raw found at internal path
+
+=== df -h / BEFORE deletion ===
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    12Gi    46Gi    21%    458k  482M    0%   /
+
+[ INFO ] Deleting original Docker.raw from internal disk...
+[ PASS ] CLEAN-01: Docker.raw deleted from internal disk
+[ PASS ] Deletion confirmed: Docker.raw no longer exists at internal path
+
+=== df -h / AFTER deletion ===
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    12Gi    70Gi    15%    458k  736M    0%   /
+
+[ PASS ] CLEAN-02: Space comparison captured (see df output above)
+[ INFO ] Backup files (.bak) retained per user decision (D-04)
+[ INFO ]   settings-store.json.bak and settings.json.bak provide rollback insurance
+[ INFO ]   Location: /Users/alexanderfedin/Library/Group Containers/group.com.docker/
+[ INFO ]   Total size: ~8 KB -- safe to keep indefinitely
+
+Results: 5 passed, 0 failed
+======================================
+Cleanup complete. Run harden.sh next to disable auto-update and start-at-login.

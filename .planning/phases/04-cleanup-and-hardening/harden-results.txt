@@ -1,0 +1,35 @@
+Docker Desktop Hardening
+========================
+Timestamp: 2026-04-10T06:18:19Z
+
+[ PASS ] Both settings files found
+[ INFO ] Stopping Docker Desktop...
+[ PASS ] Docker Desktop stopped
+[ INFO ] Writing hardening keys to settings files...
+OK
+[ PASS ] CLEAN-03 + CLEAN-04: Hardening keys written to both settings files
+[ INFO ] Starting Docker Desktop...
+[ INFO ] Waiting for daemon... 0s/120s
+[ PASS ] Docker daemon ready after 5s
+[ INFO ] Verifying hardening keys survived Docker restart (D-08)...
+OK -- all hardening keys confirmed after restart
+[ PASS ] D-08: Post-restart verification passed
+
+=== Migration Complete ===
+Phase 1: Pre-flight         COMPLETE
+Phase 2: Data copy          COMPLETE
+Phase 3: Cutover            COMPLETE
+Phase 4: Cleanup/Hardening  COMPLETE
+
+Docker data location: /Volumes/Unitek-B/Docker/
+Internal disk freed: ~24 GB (see cleanup-results.txt for df before/after)
+Auto-update: DISABLED
+Start at login: DISABLED
+
+IMPORTANT: Docker requires /Volumes/Unitek-B/ to be mounted before starting.
+Always verify the volume is mounted before launching Docker Desktop.
+=========================
+
+Results: 5 passed, 0 failed
+======================================
+Hardening complete. Migration fully done.
