@@ -12,8 +12,8 @@ TARGET_DIR="/Volumes/Unitek-B/Docker"
 PASS=0
 FAIL=0
 
-preflight_pass() { echo "[ PASS ] $1"; ((PASS++)); }
-preflight_fail() { echo "[ FAIL ] $1"; ((FAIL++)); }
+preflight_pass() { echo "[ PASS ] $1"; PASS=$((PASS + 1)); }
+preflight_fail() { echo "[ FAIL ] $1"; FAIL=$((FAIL + 1)); }
 preflight_info() { echo "[ INFO ] $1"; }
 preflight_abort() {
   echo ""

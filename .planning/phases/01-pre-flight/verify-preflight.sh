@@ -23,8 +23,8 @@ for arg in "$@"; do
   esac
 done
 
-preflight_pass() { echo "[ PASS ] $1"; ((PASS++)); }
-preflight_fail() { echo "[ FAIL ] $1"; ((FAIL++)); }
+preflight_pass() { echo "[ PASS ] $1"; PASS=$((PASS + 1)); }
+preflight_fail() { echo "[ FAIL ] $1"; FAIL=$((FAIL + 1)); }
 preflight_info() { echo "[ INFO ] $1"; }
 
 echo "Pre-flight Verification Results"

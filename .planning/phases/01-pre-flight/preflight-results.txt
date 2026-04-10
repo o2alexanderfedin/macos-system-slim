@@ -1,0 +1,22 @@
+Pre-flight Check Results
+========================
+[ PASS ] PREFLT-01: Docker processes stopped
+[ PASS ] PREFLT-02: /Volumes/Unitek-B is APFS format
+[ PASS ] PREFLT-03: Free space 1495 GB >= required 48.3 GB (2x Docker.raw on-disk 24.1 GB)
+[ PASS ] PREFLT-05: /Volumes/Unitek-B/Docker exists and is writable
+[ PASS ] PREFLT-04: Backups created: settings-store.json.bak, settings.json.bak
+[ INFO ] Backend: Apple Virtualization Framework confirmed (not Docker VMM)
+[ INFO ] Docker.raw logical: 32.0 GB | on-disk (sparse): 24.1 GB | diskSizeMiB discrepancy resolved (settings.json 61035 MiB is stale; actual on-disk is 24.1 GB)
+
+All 5 pre-flight checks passed. Safe to proceed to Phase 2.
+Pre-flight Verification Results
+================================
+[ PASS ] PREFLT-01: No Docker processes running
+[ PASS ] PREFLT-02: /Volumes/Unitek-B is APFS format
+[ PASS ] PREFLT-03: Free space 1495 GB >= required 48.3 GB (2x Docker.raw on-disk 24.1 GB)
+[ PASS ] PREFLT-04: Backup files present: settings-store.json.bak, settings.json.bak
+[ PASS ] PREFLT-05: /Volumes/Unitek-B/Docker exists and is writable
+[ PASS ] D-05: Apple Virtualization Framework backend confirmed (not Docker VMM)
+[ PASS ] Backup content matches source files (no post-backup edits detected)
+
+All 7 verification checks passed.
